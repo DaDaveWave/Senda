@@ -244,20 +244,22 @@
     .hw-headline .red { color: var(--red-bright); }
     .hw-desc {
       font-size: 16px; color: var(--muted);
-      max-width: 600px; margin: 0 auto 48px;
+      max-width: 700px; margin: 0 auto 48px;
       line-height: 1.7; text-align: center;
+      word-wrap: break-word;
     }
     .hw-desc strong { color: var(--white); font-weight: 500; }
     .hw-phone-btn {
-      display: flex; align-items: center; gap: 12px;
+      display: inline-flex; align-items: center; gap: 12px;
       background: var(--red-bright);
       color: #fff; text-decoration: none;
-      padding: 16px 32px;
+      padding: 18px 40px;
       border-radius: 40px;
       font-family: 'Oswald', sans-serif;
-      font-weight: 600; font-size: 20px;
+      font-weight: 600; font-size: 22px;
       letter-spacing: 0.08em;
       margin: 0 auto 56px;
+      display: flex;
       width: fit-content;
       transition: opacity 0.2s;
     }
@@ -384,7 +386,7 @@
     .cp-desc {
       font-size: 15px; color: var(--muted);
       line-height: 1.75; margin-bottom: 28px;
-      max-width: 600px;
+      max-width: 800px;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -414,7 +416,7 @@
       border-radius: 8px;
       padding: 24px; margin-bottom: 48px;
       text-align: center;
-      max-width: 600px;
+      max-width: 800px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -426,7 +428,7 @@
     .cp-stats {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 16px;
-      max-width: 700px;
+      max-width: 900px;
       margin: 0 auto;
     }
     .cp-stat {
@@ -438,9 +440,9 @@
     .cp-stat:hover { background: rgba(255,255,255,0.07); }
     .cp-stat-n {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 52px; color: var(--white); line-height: 1; margin-bottom: 10px;
+      font-size: 72px; color: var(--white); line-height: 1; margin-bottom: 10px;
     }
-    .cp-stat-l { font-size: 12px; color: var(--muted); line-height: 1.55; }
+    .cp-stat-l { font-size: 14px; color: var(--muted); line-height: 1.55; }
 
     /* ── SIGNUP ── */
     .signup-section {
@@ -726,12 +728,16 @@
   <div class="connect-num reveal reveal-delay-1" id="connectNum">&lt;60</div>
   <p class="connect-seconds reveal reveal-delay-2">Seconds</p>
   <p class="connect-sub reveal reveal-delay-3">We match you with the highest-rated, closest licensed pros in your area.</p>
-  <p class="connect-hw-label reveal reveal-delay-4" style="margin-top:64px;">For Homeowners</p>
+
 </section>
 
 <!-- HOMEOWNER -->
 <section class="hw-section">
-  <p class="hw-eyebrow reveal">For Homeowners</p>
+  <!-- FOR HOMEOWNERS header -->
+  <div style="text-align:center;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);">
+    <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,5vw,52px);letter-spacing:0.08em;color:var(--white);">For <span style="color:var(--red-bright);">Homeowners</span></p>
+  </div>
+
   <h2 class="hw-headline reveal reveal-delay-1">
     <span class="white">YOUR EMERGENCY</span><br>
     <span class="red">SHOULDN'T WAIT</span>
@@ -740,7 +746,8 @@
     When your basement is flooding at 2 AM, you don't have time to scroll through reviews or leave voicemails. SENDA puts you on the phone with a real contractor — instantly. And it's <strong>completely free</strong> for homeowners.
   </p>
   <a href="tel:18888402988" class="hw-phone-btn">
-    <div class="phone-icon"><span>📞</span></div> <a href="tel:18888402988" style="color:#fff;text-decoration:none;">1-888-840-2988</a>
+    <div class="phone-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+    1-888-840-2988
   </a>
 
   <div class="feature-cards">
@@ -818,7 +825,11 @@
 
 <!-- CONTRACTOR -->
 <section class="cp-section" id="contractors">
-  <p class="cp-eyebrow">For Contractors</p>
+  <!-- FOR CONTRACTORS header -->
+  <div style="text-align:center;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);">
+    <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,5vw,52px);letter-spacing:0.08em;color:var(--white);">For <span style="color:var(--red-bright);">Contractors</span></p>
+  </div>
+
   <h2 class="cp-headline">
     <span class="white">YOU'RE LOSING JOBS</span><br>
     <span class="red">YOU NEVER KNEW EXISTED</span>
