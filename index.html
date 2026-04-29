@@ -778,8 +778,8 @@
       <div class="hw-stat-l">homeowners can't find help during emergencies</div>
     </div>
     <div class="hw-stat">
-      <div class="hw-stat-n">$0</div>
-      <div class="hw-stat-l">cost for homeowners</div>
+      <div class="hw-stat-n" style="color:var(--red-bright);">$0</div>
+      <div class="hw-stat-l" style="color:var(--white);font-size:14px;font-weight:500;">To use SENDA.<br><span style="color:var(--muted);font-weight:400;font-size:12px;">No fee to connect.</span></div>
     </div>
   </div>
 </section>
@@ -787,7 +787,7 @@
 <!-- HOW IT WORKS -->
 <section class="hiw-section">
   <h2 class="section-title">HOW IT WORKS</h2>
-  <div class="hiw-grid">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;">
     <div class="hiw-step reveal reveal-delay-1">
       <div class="hiw-num">01</div>
       <div class="hiw-icon">📞</div>
@@ -802,12 +802,6 @@
     </div>
     <div class="hiw-step reveal reveal-delay-3">
       <div class="hiw-num">03</div>
-      <div class="hiw-icon">🏆</div>
-      <div class="hiw-title">First to Answer Wins</div>
-      <div class="hiw-desc">The first available contractor accepts and gets connected to you live.</div>
-    </div>
-    <div class="hiw-step reveal reveal-delay-4">
-      <div class="hiw-num">04</div>
       <div class="hiw-icon">✅</div>
       <div class="hiw-title">You're Connected</div>
       <div class="hiw-desc">Help is on the way. Under 60 seconds, start to finish.</div>
@@ -820,41 +814,66 @@
   <div class="rb-item"><div class="rb-n">&lt;60S</div><div class="rb-l">Connect Time</div></div>
   <div class="rb-item"><div class="rb-n">3</div><div class="rb-l">Trades</div></div>
   <div class="rb-item"><div class="rb-n">24/7</div><div class="rb-l">Always On</div></div>
-  <div class="rb-item"><div class="rb-n">$0</div><div class="rb-l">To Homeowners</div></div>
+  <div class="rb-item"><div class="rb-n">$0</div><div class="rb-l">To Use</div></div>
 </div>
 
 <!-- CONTRACTOR -->
 <section class="cp-section" id="contractors">
-  <!-- FOR CONTRACTORS header -->
+
+  <!-- Header -->
   <div style="text-align:center;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);">
     <p style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,5vw,52px);letter-spacing:0.08em;color:var(--white);">For <span style="color:var(--red-bright);">Contractors</span></p>
   </div>
 
+  <!-- Headline -->
   <h2 class="cp-headline">
     <span class="white">YOU'RE LOSING JOBS</span><br>
     <span class="red">YOU NEVER KNEW EXISTED</span>
   </h2>
-  <p class="cp-desc">
-    Every missed call is a lost customer — and a potential bad review. SENDA sends you pre-qualified emergency calls that fit your trade and location. If a call doesn't fit before you connect, simply pass. You only pay $50 when you accept and connect with a live customer. No subscription. No contracts.
-  </p>
-  <div class="cp-callout">
-    <div class="cp-callout-num">37%</div>
-    <p class="cp-callout-text">of 1-star reviews are about unanswered phones. Don't let that be you.</p>
-  </div>
-  <div class="cp-stats">
-    <div class="cp-stat reveal reveal-delay-1">
-      <div class="cp-stat-n">62%</div>
-      <div class="cp-stat-l">of calls missed while on job sites</div>
+
+  <!-- Problem — two stat blocks side by side -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);max-width:800px;margin:40px auto 48px;border-radius:8px;overflow:hidden;">
+    <div style="background:#0a0908;padding:48px 40px;text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:96px;color:var(--red-bright);line-height:1;margin-bottom:12px;">37%</div>
+      <div style="font-family:'Oswald',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);margin-bottom:8px;">Of 1-Star Reviews</div>
+      <div style="font-size:13px;color:var(--muted);line-height:1.6;">are about unanswered phones</div>
     </div>
-    <div class="cp-stat reveal reveal-delay-2">
-      <div class="cp-stat-n">97%</div>
-      <div class="cp-stat-l">of callers don't leave a voicemail</div>
-    </div>
-    <div class="cp-stat reveal reveal-delay-3">
-      <div class="cp-stat-n">37%</div>
-      <div class="cp-stat-l">of 1-star reviews cite unanswered phones</div>
+    <div style="background:#0f0b0a;padding:48px 40px;text-align:center;border-left:3px solid var(--red-bright);">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:96px;color:var(--red-bright);line-height:1;margin-bottom:12px;">85%</div>
+      <div style="font-family:'Oswald',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);margin-bottom:8px;">Never Call Back</div>
+      <div style="font-size:13px;color:var(--muted);line-height:1.6;">callers who hit voicemail move on immediately</div>
     </div>
   </div>
+
+  <!-- Competitor callout bar -->
+  <div class="reveal" style="background:linear-gradient(135deg,rgba(232,41,26,0.08),rgba(232,41,26,0.02));border:1px solid rgba(232,41,26,0.25);border-left:4px solid var(--red-bright);border-radius:8px;padding:28px 36px;margin-bottom:48px;max-width:800px;margin-left:auto;margin-right:auto;">
+    <div style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.4em;text-transform:uppercase;color:var(--red-bright);margin-bottom:12px;">Other Lead Services</div>
+    <div style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:600;color:var(--white);margin-bottom:10px;line-height:1.4;">Charge $50–$150 per lead — then sell that same lead to 5 other contractors.</div>
+    <div style="font-size:14px;color:var(--muted);line-height:1.7;">With SENDA you only pay when you're already on the phone with a live customer. No auctions. No competing for the same lead. No wasted money.</div>
+  </div>
+
+  <!-- Solution label -->
+  <p style="font-family:'Oswald',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.4em;text-transform:uppercase;color:var(--red-bright);text-align:center;margin-bottom:32px;">Here's How SENDA Fixes It</p>
+
+  <!-- Solution cards -->
+  <div class="feature-cards">
+    <div class="feature-card reveal reveal-delay-1">
+      <span class="feature-icon">📲</span>
+      <div class="feature-title">Get The Call</div>
+      <div class="feature-desc">Emergency jobs in your area sent directly to your phone. Answer when you can, pass when you can't.</div>
+    </div>
+    <div class="feature-card reveal reveal-delay-2">
+      <span class="feature-icon">💰</span>
+      <div class="feature-title">Zero Monthly Cost</div>
+      <div class="feature-desc">You only pay $50 when you connect with a live customer. Miss a call — pay nothing. No subscription.</div>
+    </div>
+    <div class="feature-card reveal reveal-delay-3">
+      <span class="feature-icon">✋</span>
+      <div class="feature-title">You're In Control</div>
+      <div class="feature-desc">Accept the jobs that fit. Decline the ones that don't. No commitment. No pressure. Just more work when you want it.</div>
+    </div>
+  </div>
+
 </section>
 
 <!-- SIGNUP FORM -->
